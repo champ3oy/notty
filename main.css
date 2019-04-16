@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "poppins";
+  src: url(poppins/Poppins-Medium.ttf);
+}
+
+body {
+  background-color: #040418;
+}
+
+.header {
+  background-color: rgba(255, 47, 47);
+  height: 50px;
+  width: 300px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.header:before {
+  content: "";
+  background-color: rgba(255, 47, 47, 0.767);
+  height: 10px;
+  width: 290px;
+  position: absolute;
+  top: -10px;
+  left: 5px;
+}
+.header:after {
+  content: "";
+  background-color: rgba(255, 47, 47, 0.534);
+  height: 7px;
+  width: 270px;
+  position: absolute;
+  top: -17px;
+  left: 13px;
+}
+.more {
+  border: 2px solid white;
+  width: 10px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 22px;
+  right: 10px;
+}
+.more:before {
+  content: "";
+  border: 2px solid white;
+  width: 10px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
+.note {
+  color: aliceblue;
+  display: absolute;
+  margin-left: 10px;
+  font-family: poppins;
+  font-size: 14px;
+}
+.sheet {
+  border: 0 solid red;
+  background-color: wheat;
+  height: 0vh;
+  width: 299px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s ease-out;
+}
+.sheet.show {
+  visibility: visible;
+  transform: translate(0, 100px, 0);
+  opacity: 1;
+}
+.textarea {
+  border: 0 solid red;
+  background-color: wheat;
+  height: 45vh;
+  width: 280px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  font-family: poppins;
+  font-size: 20px;
+  padding: 10px;
+}
+.note2 {
+  border: none;
+  background-color: rgba(3, 3, 3, 0);
+  height: auto;
+  width: auto;
+  font-family: poppins;
+  font-size: 14px;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  color: aliceblue;
+}
+.note2:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+::placeholder {
+  color: lightgray;
+}
+.more.close {
+  transform: rotate(45deg);
+}
+
+/*# sourceMappingURL=main.css.map */
